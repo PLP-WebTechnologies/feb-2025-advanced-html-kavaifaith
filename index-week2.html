@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index page</title>
+    <style>
+        table {
+            width: 90%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+         }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Page</h1>
+    
+    <!--Ordered List with Roman numbers-->
+    <h2>Table of Content</h2>
+    <ol type="i">
+        <li>Ordered List</li>
+        <li>Image from pexels</li>
+        <li>Contact table</li>
+        <li>Registration form</li>
+        <li>Register</li>
+    </ol>
+   
+    <!--Image from pexels-->
+    <h2>Images from pexels</h2>
+    <img src="c:\Users\LENOVO\Downloads\pexels-huy-phan-316220-31198911.jpg" alt="image of a work place"  width="400" height="400">
+    <img src="c:\Users\LENOVO\Downloads\pexels-prateekkatyal-2740956.jpg" alt="" width="400" height="400">
+    <br><br>
+
+    <video width="320" height="240" controls>
+        <source src="c:\Users\LENOVO\Desktop\Let's make some lunch.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <audio controls>
+        <source src="c:\Users\LENOVO\Desktop\random audio.opus" type="audio/mp3">
+        Your browser does not support the audio tag.
+    </audio>
+
+    <!--Contact Table-->
+    <h2>Contact Table</h2>
+    <table>
+        <tr>>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Mobile</th>
+        <th>Email</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>00502 Karen</td>
+            <td>+254 7897123456</td>
+            <td>johndoe@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Hillary Smith</td>
+            <td>00603 Lavington</td>
+            <td>+254 72986235490</td>
+            <td>hillarysmith@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Damon Salvatore</td>
+            <td>00604 Lower Kabete</td>
+            <td>+254 7220059721</td>
+            <td>damonsalvatore@gmail.com</td>
+        </tr>
+        <tr> 
+            <td>Bonnie Bennett</td>
+            <td>00505 Ngong Road</td>
+            <td>+254 7125068790</td>
+            <td>bonniebennett@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Elena Gilbert </td>
+            <td>00623 Parklands</td>
+            <td>+254 7033820050</td>
+            <td>elenagilbert@gmail.com</td>
+    </table>
+
+    <!--Registration Forms-->
+
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+
+        <label for="gender">Gender: </label>
+        <input type="radio" id="male" name="gender" value="male"><label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female"><label for="female">Female</label><br><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Select a country</option>
+            <option value="Kenya">Kenya</option>
+            <option value="South Africa">South Africa</option>
+            <option value="Uganda">Uganda</option>
+            <option value="Nigeria">Nigeria</option>
+            <option value="Rwanda">Rwanda</option>
+        </select><br><br>
+
+        <label for="interests">Interests: </label>
+        <input type="checkbox" id="coding" name="interests" value="coding">Coding
+        <input type="checkbox" id="adventure" name="interests" value="adventure">Adventure
+        <input type="checkbox" id="music" name="interests" value="music">Music
+        <input type="checkbox" id="swimming" name="interests" value="swimming">Swimming
+        <input type="checkbox" id="sports" name="interests" value="sports">Sports
+        <br><br>
+
+        <label for="description">Describe yourself:</label>
+        <textarea id="description" name="description" rows="4" cols="50" placeholder="Describe yourself here"></textarea>
+        <br><br>
+
+        <input type="submit" value="Register">
+
+    </form>  
+</body>
+</html>
